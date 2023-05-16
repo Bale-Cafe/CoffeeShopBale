@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bale Café</title>
+    <link rel="icon" href="Logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./style2.css">
+    <script>
+        function Menu(){
+            document.getElementById("menu-image").style.display = "block";
+        }
+        function Close(){
+            document.getElementById("menu-image").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" id="logo">
+        <h1>Bale Café</h1>
+        <ul>
+            <li><a href="./index.html" id="home">Home</a></li>
+            <li><a href="./Product.html" id="product">Products</a></li>
+            <li><a href="./Gallery.html" id="gallery">Gallery</a></li>
+            <li><a href="./About.html" id="about">About</a></li>
+            <li><a href="./Contacts.html" id="contact">Contacts</a></li>
+        </ul>
+    </header>
+    <div id="menu-image">
+        <div>
+            <button onclick="Close()">x</button>
+            <img src="menuPic.jpg">
+            <img src="menuPic2.jpg">
+        </div>
+    </div>
+        <article>
+            <h1 id="greetings"> Hello mga ka Balepeeps!</h1>
+            <img src="galleryCover.jpg" class="cover">
+            <button onclick="Menu()">MENU</button>
+        </article>
+    <div id="albums">
+    <div><img src="album1.jpg"></div>
+    <div><img src="album2.jpg"></div>
+    <div><img src="album3.jpg"></div>
+    <div><img src="album4.jpg"></div>
+    </div>
+    <div class="con1">
+    <div id="con-title"><h1> What Our Customer's Have to Say </h1></div>
+    <div> <h2> Delicious Snacks & Beautiful Place </h2></div>
+    <div><h2> Great Selection of Mix & match </h2></div>
+    <div>
+        <article>
+            The ambiance is very welcoming and charming. Amazing coffee, food and service.
+            Staff are extremely knowledgeable and make great recommendations.
+            Atmosphere is chill and cool but the staff is also really friendly.
+             They know what they’re doing and what they’re talking about,
+              and you can tell making the customers happy is their main priority.
+        </article>
+    </div>
+    <div>
+        <article>
+            Excellent food. Menu is extensive to a particularly high standard.
+            Definitely fine dining. It can be expensive but worth it and they do different deals on different nights so it’s worth checking them out before you book. 
+            Highly recommended.
+        </article>
+    </div>
+    </div>
+
+    <hr id="line">
+
+    <div class="aboutBale">
+        <div class="head1"><h1> Bale Cafe </h1></div>
+        <div class="head1"><h1> FEATURED COFFEE & CAKES </h1></div>
+        <div class="sect">
+            <img src="balecafeimg.jpg" class="image-of-cafe">
+        </div>
+        <div class="sect">
+            <article> Your Neighborhood House Cafe.
+                Where good friends and great conversation came together when having a cup of coffee and cakes.  
+            </article>
+        </div>
+        <div>
+            <img src="TUNAPESTO.jpg" class="image-of-cafe2">
+        </div>   
+        <div class="name-pic">
+                <article>
+                    CHOCO WAFFLES AND TUNA PESTO 
+                    <br>
+                    - The Chocolate waffles, which are our greatest item for
+                    customers with sweet tooths, can be purchase for just 70 pesos.
+                    <br>
+                    - A Supertasters, are you? a fan of salty foods, or both? 
+                    In addition to our delectable product, we also provide you with our tuna pesto pasta.
+                </article>
+        </div>     
+        <div>
+            <img src="tacos.jpg" class="image-of-cafe2">
+        </div>
+        <div>
+                <article>
+                    NACHOS WITH CLUBHOUSE AND FRIES <br>
+                    - We offer our best-selling item—the crowd's choice, 
+                    "Nachos with Clubhouse and Fries"—for just 200 pesos.
+                </article>
+        </div>
+        <div></div>
+        <div></div>
+        <div class="address">
+             015 Marbea Subdivision San Nicolas 2 
+        </div>
+    </div>
+</body>
+</html>

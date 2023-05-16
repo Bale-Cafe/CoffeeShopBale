@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bale Café</title>
+    <link rel="icon" href="Logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./style1.css">
+</head>
+<body>
+    <header>
+        <img src="Logo.png" id="logo">
+        <h1>Bale Café</h1>
+        <ul>
+            <li><a href="./index.html" id="home">Home</a></li>
+            <li><a href="./Product.html" id="product">Products</a></li>
+            <li><a href="./Gallery.html" id="gallery">Gallery</a></li>
+            <li><a href="./About.html" id="about">About</a></li>
+            <li><a href="./Contacts.html" id="contact">Contacts</a></li>
+        </ul>
+    </header>
+    <div class="w3-content w3-section" style="max-width:200%">
+        <img class="mySlides" src="coffee.jpg">
+        <img class="mySlides" src="milktea.png">
+        <img class="mySlides" src="waffle.jpg">
+        <img class="mySlides" src="burger.jpg">
+        <img class="mySlides" src="pasta.jpg">
+      </div>
+      <h1 id="prod_title">PRODUCTS</h1>
+      <hr id="line">
+      <div id="prodList">
+        <div>
+          <a href="Salad.html" class="menus"><img src="logo_salad.png"><br>SALAD</a>
+        </div>
+        <div>
+          <a href="Coffee.html" class="menus"><img src="logo_coffee.png"><br>COFFEE AND TEA</a>
+        </div>
+        <div>        
+          <a href="Cake.html" class="menus"><img src="logo_cake.png"><br>BREADS AND CAKES</a>
+        </div>
+        <div>        
+          <a href="Burger.html" class="menus"><img src="logo_burger.png"><br>SANDWICHES AND FRIES</a>
+        </div>
+        <div>        
+          <a href="Milktea.html" class="menus"><img src="logo_milktea.png"><br>MILKTEA AND FRAPPE</a>
+        </div>
+        <div>        
+          <a href="Pasta.html" class="menus"><img src="logo_pasta.png"><br>PASTA</a>
+        </div>
+      </div>
+
+      </div>
+      <h1 id="prod_title">FEATURED PRODUCTS</h1>
+      <hr id="line1">
+      <hr id="line2">
+      <div class="featured_album">
+        <div>
+          <img src="FEATURED1.jpg">
+        </div>
+        <div>
+            <article>
+              <br>
+              Hey Balepeeps! - freshly made cinnamon buns, 
+              a popular favorite, are also offered. 
+              We are now taking advance orders due to our rapid sell-out!! 
+              Simply message us through our page. <br><br> 
+              You may serve it alongside your preferred Bale beverages, 
+              like as milk tea or strongly brewed coffee. 
+              Don't forget to stop by our shop or place an order through Magalang Food Ride.
+              <br>
+              <img src="smokey.png" class="smokey">
+            </article>
+        </div>
+      </div>
+      <div class="featured_album">
+        <div>
+          <article>
+            <br>
+            Need something to rejuvenate you but are having trouble making a decision? 
+            We've got you! In order to fight the heat, satisfy your appetites here. 
+            We provide milk tea and frappe, or you may add toppings 
+            like ice cream cones to make your order Instagram-worthy.
+            <br><br>
+            You may also choose a variety of craves to satisfy your appetites or experiment with other flavors.
+            <br>
+            <img src="smokey.png" class="smokey">
+          </article>
+        </div>
+        <div>
+          <img src="FEATURED2.jpg">
+        </div>
+      </div>
+       <div class="featured_album">
+        <div>
+          <img src="FEATURED3.jpg">
+        </div>
+        <div>
+          <article>
+            <br>
+            You may play many different combinations or matches for your food choices, 
+            including waffles, cakes, and even snacks like burgers and fries. 
+            <br><br>
+            We recommend our well-known chocolate waffles 
+            with a drizzle of icing on top, which will fulfill your cravings.
+            <img src="smokey.png" class="smokey">
+          </article>
+        </div>
+      </div>
+
+
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+</body>
+</html>
