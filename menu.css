@@ -1,0 +1,144 @@
+*{
+    font-family: Lucida Sans Unicode;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    padding: 15px 15px 20px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C19A6B;
+}
+header #logo{
+    display: inline-block;
+    left: 10px;
+    top: -5px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+header ul li a{
+    padding: 5px 15px;
+    color: white;
+    border: 1px solid white;
+}
+header ul li a:hover,
+header ul li a#product
+{
+    padding: 5px 15px;
+    color: #C19A6B;
+    background-color: white;
+    transition: 0.3s;
+}
+header h1{
+    font-family: Gigi;
+    color: #502c11;
+}
+#prodList{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 25px;
+    row-gap: 20px;
+}
+#prodList{
+    background-color: #684a34;
+    padding: 40px;
+    margin-top: -65px;
+}
+#line{
+    border: 2px solid white;
+    position: relative;
+    top: -40px;
+    width: 21%;
+    left: 39%;
+}
+.menus img{
+    width: 100px;
+    height: 100px;
+    transition: 0.8s ease-in-out;
+}
+.menus img:hover{
+    width: 120px;
+    height: 120px;
+    transform: rotate(-5deg);
+    transition: 0.8s ease-in-out;
+}
+#prodList div{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+#prodList div a{
+    color: #000000;
+    font-family: Verdana;
+
+}
+#prod_title{
+    font-family: Arial;
+    letter-spacing: 10px;
+    margin: 25px;
+    text-align: center;
+    text-shadow: 2px 2px #ffffff;
+    padding: 20px;
+}
+#cover img{
+    width: 420px;
+    height: 100%;
+    object-fit: cover;
+}
+#cover{
+    grid-row: span 13;
+}
+.container{
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(212, 163, 119),rgb(255, 255, 255));
+    display: grid;
+    grid-template-columns: 450px auto auto auto;
+    padding: 20px;
+    overflow: auto;
+    margin: 35px;
+    row-gap: 10px;
+}
+.head_title{
+    grid-column: 2 / span 3;
+    text-align: center;
+    border-bottom: 2px solid #502c11;
+    border-top: 2px solid #502c11;
+    width: 100%;
+    border-radius: 20px;
+}
+.head_title h1{
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: Impact;
+    letter-spacing: 15px;
+}
+.container div{
+    font-size: 15px;
+    margin: 10px;
+    width: 100%;
+}
+.container div h2{
+    font-family: Impact;
+}
+.container div .list-of-menu{
+    font-family: monospace;
+}

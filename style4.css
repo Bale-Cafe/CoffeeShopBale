@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: Lucida Sans Unicode;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ffffff;
+}
+header{
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    padding: 15px 15px 20px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgb(193, 154, 107),rgba(193, 154, 107, 0.452),rgba(255, 255, 255, 0));
+}
+header #logo{
+    display: inline-block;
+    left: 10px;
+    top: -5px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+header ul li a{
+    padding: 5px 15px;
+    color: white;
+    border: 1px solid white;
+}
+header ul li a:hover,
+header ul li a#contact
+{
+    padding: 5px 15px;
+    color: #C19A6B;
+    background-color: white;
+    transition: 0.3s;
+}
+header h1{
+    font-family: Gigi;
+    color: #502c11;
+}
+#contact_us{
+    font-family: Poppins;
+}
+.container,
+.container2
+{
+    display: grid;
+
+}
+.container{
+    align-items: center;
+    margin: 50px;
+    grid-template-columns: 450px auto;
+    grid-template-rows: 60px 430px 550px;
+    justify-content: center;
+    row-gap: 15px;
+}
+#con{
+    width: 400px;
+    height: 450px;
+}
+#con-image{
+    grid-row: span 2;
+}
+#map-con{
+    grid-column: span 2;
+    grid-row: 3;
+}
+.container2{
+    grid-template-rows: 30px 70px 40px 40px 40px 60px;
+    border: solid rgb(44, 16, 0) 2px;
+    padding: 20px;
+    font-weight: bold;
+    height: 390px;
+    width: 450px;
+}
+#loc_container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#loc_logo{
+    width: 50px;
+    height: 50px;
+}
+.logo_con{
+    width: 60px;
+    height: 60px;
+}
+#container3{
+    display: flex;
+    justify-content: center;
+}
+.number{
+    margin-left: 20px;
+    color: black;
+}
+#store{
+    position: relative;
+    right: -220px;
+    width: 230px;
+    height: 230px;
+}
