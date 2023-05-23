@@ -9,14 +9,17 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #eeeae7;
+    background-image: url("homecover.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 header{
     position: sticky;
     z-index: 5;
     top: 0;
     left: 0;
-    padding: 15px 15px 20px 100px;
+    padding: 25px 20px 20px 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -26,10 +29,10 @@ header{
 header #logo{
     display: inline-block;
     left: 10px;
-    top: -5px;
+    top: -10px;
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     padding-bottom: 2px;
 }
 header ul{
@@ -57,4 +60,30 @@ header ul li a#home
 header h1{
     font-family: Gigi;
     color: #502c11;
+}
+.photos{
+    margin-top: 10px;
+    overflow-y: auto;
+    height: 460px;
+    justify-content: center;
+    width: 45%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+}
+.below{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 200px;
+}
+.homevid{
+    margin: 10px;
+    object-fit: contain;
+    height: 460px;
+}
+.photos div img{
+    width: 250px;
+    height: 240px;
 }
